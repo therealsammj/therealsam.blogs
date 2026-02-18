@@ -1,121 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biking Blogs - The Real Sam</title>
-  <meta name="description" content="Read biking blogs and adventures by Sam.">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biking Blogs - The Real Sam</title>
+<meta name="description" content="Read biking blogs and adventures by Sam.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
 
-    body {
-      background: #0a0a0a;
-      color: white;
-    }
+  body {
+    background: #0a0a0a;
+    color: white;
+  }
 
-    header {
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #111;
-    }
+  header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+  }
 
-    header h1 {
-      font-size: 22px;
-      letter-spacing: 2px;
-    }
+  header h1 {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
 
-    .section {
-      padding: 60px 40px;
-      text-align: center;
-    }
+  .back-btn {
+    display: inline-block;
+    margin: 20px 40px;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+  }
 
-    .section h3 {
-      font-size: 32px;
-      margin-bottom: 40px;
-    }
+  .back-btn:hover {
+    background: rgba(255,255,255,0.2);
+  }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      justify-items: center;
-    }
+  .section {
+    padding: 40px 40px;
+  }
 
-    .card {
-      background: #111;
-      border-radius: 12px;
-      overflow: hidden;
-      width: 100%;
-      max-width: 320px;
-      transition: 0.3s;
-      cursor: pointer;
-    }
+  .section h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      transition: 0.3s;
-    }
+  .subheading {
+    font-size: 24px;
+    margin: 30px 0 15px 0;
+    text-align: left;
+    border-left: 4px solid #00aaff;
+    padding-left: 10px;
+  }
 
-    .card:hover img {
-      transform: scale(1.05);
-    }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
 
-    .card-content {
-      padding: 20px;
-      text-align: center;
-    }
+  .card {
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+  }
 
-    .card-content h4 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 0.3s;
+  }
 
-    .card-content p {
-      font-size: 16px;
-      color: #aaa;
-    }
+  .card:hover img {
+    transform: scale(1.05);
+  }
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #111;
-      margin-top: 40px;
-    }
-  </style>
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-content h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .card-content p {
+    font-size: 14px;
+    color: #aaa;
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px;
+    background: #111;
+    margin-top: 40px;
+  }
+</style>
 </head>
+
 <body>
 
 <header>
   <h1>The Real Sam</h1>
 </header>
 
+<a href="categories.html" class="back-btn">← Back to Categories</a>
+
 <section class="section">
   <h3>Biking Blogs</h3>
-  <div class="cards">
 
+  <div class="subheading">Mountain Adventures</div>
+  <div class="cards">
     <div class="card">
       <img src="https://images.unsplash.com/photo-1508973378895-1b8f4c9f74f0?auto=format&fit=crop&w=800&q=80" alt="Mountain Ride">
       <div class="card-content">
         <h4>Mountain Road Rides</h4>
         <p>High-speed highways and scenic mountain routes.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1499084732479-de2c02d45fc4?auto=format&fit=crop&w=800&q=80" alt="City Ride">
-      <div class="card-content">
-        <h4>City Streets Adventures</h4>
-        <p>Exploring urban routes, night rides, and city challenges.</p>
       </div>
     </div>
 
@@ -126,8 +143,27 @@
         <p>Adrenaline-pumping off-road trails and muddy adventures.</p>
       </div>
     </div>
-
   </div>
+
+  <div class="subheading">City Adventures</div>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1499084732479-de2c02d45fc4?auto=format&fit=crop&w=800&q=80" alt="City Ride">
+      <div class="card-content">
+        <h4>City Streets Adventures</h4>
+        <p>Exploring urban routes, night rides, and city challenges.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1515169067865-5387ec356754?auto=format&fit=crop&w=800&q=80" alt="Night Ride">
+      <div class="card-content">
+        <h4>Night Rides</h4>
+        <p>City lights, late-night streets, and adrenaline thrills.</p>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <footer>
