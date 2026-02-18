@@ -1,8 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Categories - The Real Sam</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Explore categories of biking, travel, and basketball blogs by Sam.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0a0a0a;
+      color: white;
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111;
+    }
+
+    header h1 {
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+
+    .section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .card {
+      background: #111;
+      border-radius: 12px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 320px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-content h4 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .card-content a {
+      text-decoration: none;
+      color: #00aaff;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .card-content a:hover {
+      color: #ffffff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
@@ -12,29 +107,38 @@
 
 <section class="section">
   <h3>Choose a Category</h3>
-
   <div class="cards">
 
-    <div class="card">
+    <div class="card" onclick="location.href='biking.html'">
+      <img src="https://images.unsplash.com/photo-1508973378895-1b8f4c9f74f0?auto=format&fit=crop&w=800&q=80" alt="Biking">
       <div class="card-content">
-        <h4><a href="biking.html">Biking</a></h4>
+        <h4>Biking</h4>
+        <a href="biking.html">See Blogs</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" onclick="location.href='travel.html'">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Travel">
       <div class="card-content">
-        <h4><a href="travel.html">Travel</a></h4>
+        <h4>Travel</h4>
+        <a href="travel.html">See Blogs</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" onclick="location.href='basketball.html'">
+      <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80" alt="Basketball">
       <div class="card-content">
-        <h4><a href="basketball.html">Basketball</a></h4>
+        <h4>Basketball</h4>
+        <a href="basketball.html">See Blogs</a>
       </div>
     </div>
 
   </div>
 </section>
+
+<footer>
+  © 2026 The Real Sam | Built by Sam
+</footer>
 
 </body>
 </html>
