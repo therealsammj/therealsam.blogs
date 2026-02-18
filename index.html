@@ -109,14 +109,31 @@ footer {
   padding: 30px;
   background: #111;
   margin-top: 40px;
+}.glass-btn{
+  padding:15px 45px;
+  font-size:18px;
+  font-weight:bold;
+  color:white;
+  background:rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.3);
+  border-radius:30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor:pointer;
+  transition:0.3s;
 }
+
+.glass-btn:hover{
+  background:rgba(255,255,255,0.25);
+  transform: scale(1.05);
+  }
 </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Trail & Hoops</h1>
+  <h1>the real sam</h1>
   <nav>
     <a href="#biking">Biking</a>
     <a href="#travel">Travel</a>
@@ -125,7 +142,15 @@ footer {
 </header>
 
 <section class="hero">
-  <h2>Ride. Explore. Compete.</h2>
+  <div>
+    <h2>Ride. Explore. Compete.</h2>
+
+    <br><br>
+
+    <a href="categories.html">
+      <button class="glass-btn">READ</button>
+    </a>
+  </div>
 </section>
 
 <section class="section" id="biking">
@@ -168,7 +193,7 @@ footer {
 </section>
 
 <footer>
-  © 2026 Trail & Hoops | Built by Sam
+  © 2026 The real sam | Built by Sam
 </footer>
 
 </body>
